@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "abs-waterfall-check"
+version = "0.1.0"
+description = "Local release checks for ABS payment models"
+requires-python = ">=3.11"
+dependencies = ["mcp==1.26.0", "reportlab==4.5.1"]
+
+[project.optional-dependencies]
+hosted = ["psycopg[binary]==3.3.9", "google-auth[requests]==2.62.2"]
+
+[project.scripts]
+abs-waterfall-check = "abs_waterfall_check.__main__:main"
+abs-waterfall-mcp = "abs_waterfall_check.mcp_server:main"
+abs-waterfall-web = "abs_waterfall_check.web:main"
+
+[tool.setuptools]
+packages = ["abs_waterfall_check"]
+
+[tool.setuptools.package-data]
+abs_waterfall_check = ["web_static/*", "web_examples_data/*/*.json"]

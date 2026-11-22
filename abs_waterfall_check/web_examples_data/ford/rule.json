@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "deal": "Ford Credit Auto Owner Trust 2025-C",
+  "deal_version": "2025-11-01",
+  "rule_version": "1.0.0",
+  "clause": "Indenture §8.2(c)(iv)–(v)",
+  "order": [
+    "class_a_principal",
+    "class_b_interest"
+  ],
+  "support": "(iv) fourth, for allocation as principal under Section 8.2(d), the First Priority Principal Payment;\n\n(v) fifth, to the Noteholders of Class B Notes, the Accrued Note Interest for the Class B Notes;",
+  "contract_excerpt": "(iv) fourth, for allocation as principal under Section 8.2(d), the First Priority Principal Payment;\n\n(v) fifth, to the Noteholders of Class B Notes, the Accrued Note Interest for the Class B Notes;\n",
+  "extractor": "qwen2.5:1.5b",
+  "inference_backend": "llama.cpp",
+  "approved_by": "Codex demo reviewer, authorized by the requester",
+  "draft_sha256": "aa0926b24b270907a77647bbe85d1711973f390651d1fec315eb1bd85ddeaa9c"
+}

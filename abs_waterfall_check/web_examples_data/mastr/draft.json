@@ -1,0 +1,13 @@
+{
+  "schema": 2,
+  "deal": "MASTR Asset Backed Securities Trust 2006-HE1",
+  "deal_version": "prospectus-0000882377-06-000631",
+  "rule_version": "1.0.0",
+  "clause": "Prospectus Supplement — Description of the Certificates — Overcollateralization Provisions (lines 4630–4633)",
+  "type": "prepayment_charges_to_class_p",
+  "recipient": "class_p",
+  "support": "On each Distribution Date, the trust administrator will withdraw from the distribution account all amounts representing prepayment charges, if any, in respect of the Mortgage Loans received during the related Prepayment Period and will distribute these amounts to the holders of the Class P Certificates.",
+  "contract_excerpt": "On each Distribution Date, the trust administrator will withdraw from the distribution account all amounts representing prepayment charges, if any, in respect of the Mortgage Loans received during the related Prepayment Period and will distribute these amounts to the holders of the Class P Certificates.\n",
+  "extractor": "qwen2.5:1.5b",
+  "inference_backend": "llama.cpp"
+}

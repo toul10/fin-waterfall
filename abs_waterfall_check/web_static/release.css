@@ -1,0 +1,38 @@
+.release-models,.release-cases{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0}
+.release-cases .release-case{display:flex;align-items:flex-start;gap:12px;padding:14px;border:1px solid #d6dfdf;border-radius:8px;font-weight:400;cursor:pointer}
+.release-case input{width:auto;flex:none;margin:3px 0;accent-color:#225f54}
+.release-case small{display:block;margin-top:5px;color:#526660;line-height:1.5}
+.release-group{border:0;padding:0;margin:18px 0;min-width:0}
+.release-group legend{font-weight:650;padding:0}
+.release-group .release-cases{margin:8px 0 0}
+.release-practice{margin:14px 0 20px}
+.release-practice summary{cursor:pointer}
+.release-result{padding:16px 20px;border-top:1px solid #d6dfdf}
+.release-result h3{margin:0}
+.release-result p{color:#50605c}
+#release-replay{margin-top:18px;max-width:34rem}
+#release-replay button{margin-top:12px}
+@media(max-width:690px){.release-models,.release-cases{grid-template-columns:1fr}.release-result{padding:14px}}
+.release-actions{display:flex;flex-wrap:wrap;gap:10px}
+.release-result summary,.release-reference summary{cursor:pointer}
+.release-result summary strong{margin-right:10px}
+.release-result summary small{color:#526660}
+.release-result summary>span{display:block;margin:6px 0 0 16px}
+.release-reference{overflow-wrap:anywhere;margin:14px 0}
+.release-result[open] summary{margin-bottom:12px}
+.release-report .pad>h3{font-size:1.18rem;margin:.6rem 0}
+.release-report .pad>p{margin:.6rem 0;max-width:82ch;line-height:1.5}
+.release-report blockquote{max-width:86ch;border-left:3px solid #88a99b;margin:1rem 0;padding:.6rem 1rem;background:#f3f6f2;white-space:pre-line}
+.release-other>summary{cursor:pointer;font-weight:600;padding:12px 20px;border-top:1px solid #d6dfdf}
+#release-replay label{margin-top:10px}
+@media print{
+  body:has(.release-report) :is(#sidebar,.shell>header,#notice,.skip){display:none!important}
+  body:has(.release-report) .shell,body:has(.release-report) #content{margin:0!important;padding:0!important;max-width:none;width:100%}
+  .release-report :is(.release-actions,a,.panel:has(#release-replay)){display:none!important}
+  .release-report .panel{box-shadow:none;margin-bottom:12px;overflow:visible}
+  .release-report .table-scroll{overflow:visible}
+  .release-report .release-result,.release-report .release-reference{break-inside:avoid}
+  .release-report .top,.release-report .section-head{break-after:avoid}
+  .release-report .release-result{padding:10px}
+  .release-report th,.release-report td{font-size:9pt;padding:5px}
+}

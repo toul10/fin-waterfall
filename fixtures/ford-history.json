@@ -1,0 +1,247 @@
+[
+  {
+    "period": "2026-05",
+    "source": "https://www.sec.gov/Archives/edgar/data/2092555/000209255526000026/fcaot2025-c10xdinvestorrep.htm",
+    "input": {
+      "collections": 3479132904,
+      "purchases": 12095471,
+      "cleanup": 0,
+      "reserve_draw": 0,
+      "trustee_due": 0,
+      "pool_open": 89401874333,
+      "pool_close": 86253786227,
+      "pool_adjusted_close": 82966005832,
+      "reserve_open": 263158117,
+      "reserve_target": 263158117,
+      "target_oc": 5393045332,
+      "floating_interest_due": 44120302,
+      "opening": [
+        3470447198,
+        22000000000,
+        12800000000,
+        34800000000,
+        6400000000,
+        3158000000,
+        2105000000
+      ],
+      "prior_payment_date": "2026-05-15",
+      "payment_date": "2026-06-15"
+    },
+    "expected": {
+      "principal": [
+        3142091368,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "interest": [
+        11932843,
+        73150000,
+        44120302,
+        113100000,
+        21226667,
+        11105633,
+        0
+      ]
+    }
+  },
+  {
+    "period": "2026-06",
+    "source": "https://www.sec.gov/Archives/edgar/data/2092555/000209255526000031/fcaot2025-c10xdinvestorrep.htm",
+    "input": {
+      "collections": 3754907144,
+      "purchases": 4204956,
+      "cleanup": 0,
+      "reserve_draw": 0,
+      "trustee_due": 0,
+      "pool_open": 86253786227,
+      "pool_close": 82866412815,
+      "pool_adjusted_close": 79720867199,
+      "reserve_open": 263158117,
+      "reserve_target": 263158117,
+      "target_oc": 5250810553,
+      "floating_interest_due": 42165440,
+      "opening": [
+        328355830,
+        22000000000,
+        12800000000,
+        34800000000,
+        6400000000,
+        3158000000,
+        2105000000
+      ],
+      "prior_payment_date": "2026-06-15",
+      "payment_date": "2026-07-15"
+    },
+    "expected": {
+      "principal": [
+        328355830,
+        1957897441,
+        1139140330,
+        0,
+        0,
+        0,
+        0
+      ],
+      "interest": [
+        1092604,
+        73150000,
+        42165440,
+        113100000,
+        21226667,
+        11105633,
+        0
+      ]
+    }
+  },
+  {
+    "period": "2026-07",
+    "source": "https://www.sec.gov/Archives/edgar/data/2092555/000209255526000035/fcaot2025-c10xdinvestorrep.htm",
+    "input": {
+      "collections": 3519745660,
+      "purchases": 1581562,
+      "cleanup": 0,
+      "reserve_draw": 0,
+      "trustee_due": 0,
+      "pool_open": 82866412815,
+      "pool_close": 79685906112,
+      "pool_adjusted_close": 76678611717,
+      "reserve_open": 263158117,
+      "reserve_target": 263158117,
+      "target_oc": 5112559332,
+      "floating_interest_due": 42600317,
+      "opening": [
+        0,
+        20042102559,
+        11660859670,
+        34800000000,
+        6400000000,
+        3158000000,
+        2105000000
+      ],
+      "prior_payment_date": "2026-07-15",
+      "payment_date": "2026-08-17"
+    },
+    "expected": {
+      "principal": [
+        0,
+        2021470803,
+        1176128467,
+        0,
+        0,
+        0,
+        0
+      ],
+      "interest": [
+        0,
+        66639991,
+        42600317,
+        113100000,
+        21226667,
+        11105633,
+        0
+      ]
+    }
+  },
+  {
+    "period": "2026-08",
+    "source": "https://www.sec.gov/Archives/edgar/data/2092555/000209255526000039/fcaot2025-c10xdinvestorrep.htm",
+    "input": {
+      "collections": 3359999901,
+      "purchases": 714323,
+      "cleanup": 0,
+      "reserve_draw": 0,
+      "trustee_due": 0,
+      "pool_open": 79685906112,
+      "pool_close": 76642713600,
+      "pool_adjusted_close": 73769787711,
+      "reserve_open": 263158117,
+      "reserve_target": 263158117,
+      "target_oc": 4978190826,
+      "floating_interest_due": 33754573,
+      "opening": [
+        0,
+        18020631756,
+        10484731203,
+        34800000000,
+        6400000000,
+        3158000000,
+        2105000000
+      ],
+      "prior_payment_date": "2026-08-17",
+      "payment_date": "2026-09-15"
+    },
+    "expected": {
+      "principal": [
+        0,
+        1931450696,
+        1123753132,
+        0,
+        0,
+        0,
+        0
+      ],
+      "interest": [
+        0,
+        59918601,
+        33754573,
+        113100000,
+        21226667,
+        11105633,
+        0
+      ]
+    }
+  },
+  {
+    "period": "2026-09",
+    "source": "https://www.sec.gov/Archives/edgar/data/2092555/000209255526000043/fcaot2025-c10xdinvestorrep.htm",
+    "input": {
+      "collections": 3084096025,
+      "purchases": 0,
+      "cleanup": 0,
+      "reserve_draw": 0,
+      "trustee_due": 0,
+      "pool_open": 76642713600,
+      "pool_close": 73871515475,
+      "pool_adjusted_close": 71129188824,
+      "reserve_open": 263158117,
+      "reserve_target": 263158117,
+      "target_oc": 4847591588,
+      "floating_interest_due": 31269567,
+      "opening": [
+        0,
+        16089181060,
+        9360978071,
+        34800000000,
+        6400000000,
+        3158000000,
+        2105000000
+      ],
+      "prior_payment_date": "2026-09-15",
+      "payment_date": "2026-10-15"
+    },
+    "expected": {
+      "principal": [
+        0,
+        1763811249,
+        1026217454,
+        0,
+        0,
+        0,
+        0
+      ],
+      "interest": [
+        0,
+        53496527,
+        31269567,
+        113100000,
+        21226667,
+        11105633,
+        0
+      ]
+    }
+  }
+]

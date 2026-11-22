@@ -1,0 +1,54 @@
+name: fin-waterfall-local
+services:
+  db:
+    image: postgres:16-bookworm
+    environment:
+      POSTGRES_DB: waterfall
+      POSTGRES_USER: waterfall
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Run the local launcher to initialize the password}
+    volumes:
+      - reviews:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U waterfall -d waterfall"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  fake-gemini:
+    image: fin-waterfall:local
+    pull_policy: never
+    command: ["python", "/opt/local-test/fake_gemini.py", "--bind", "0.0.0.0", "--port", "8799"]
+    volumes:
+      - ../scripts/fake_gemini.py:/opt/local-test/fake_gemini.py:ro
+    ports:
+      - "127.0.0.1:${FAKE_PORT:-8829}:8799"
+    healthcheck:
+      test: ["CMD", "python", "-c", "from urllib.request import urlopen; urlopen('http://127.0.0.1:8799/healthz', timeout=2).close()"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  app:
+    image: fin-waterfall:local
+    pull_policy: never
+    environment:
+      PORT: "8080"
+      WORKSPACE_ORIGIN: http://127.0.0.1:${HOSTED_PORT:-8820}
+      DATABASE_URL: postgresql://waterfall:${POSTGRES_PASSWORD}@db/waterfall
+      WATERFALL_ORGANIZATION: "Local hosted pilot"
+      GOOGLE_CLOUD_PROJECT: local-pilot
+      GOOGLE_CLOUD_LOCATION: us-central1
+      GEMINI_MODEL: gemini-local-test
+      GEMINI_FAKE_ENDPOINT: http://fake-gemini:8799
+    ports:
+      - "127.0.0.1:${HOSTED_PORT:-8820}:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+      fake-gemini:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "from urllib.request import urlopen; urlopen('http://127.0.0.1:8080/readyz', timeout=3).close()"]
+      interval: 5s
+      timeout: 4s
+      retries: 12
+volumes:
+  reviews:

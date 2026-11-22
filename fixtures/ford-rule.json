@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "deal": "Ford Credit Auto Owner Trust 2025-C",
+  "deal_version": "2025-11-01",
+  "rule_version": "1.0.0",
+  "clause": "Indenture §8.2(c)(iv)–(v)",
+  "source": "https://www.sec.gov/Archives/edgar/data/1129987/000110465925116294/tm2530629d11_ex4-1.htm",
+  "order": ["class_a_principal", "class_b_interest"],
+  "approved_by": "Bundled public rule, transcribed from SEC execution version"
+}

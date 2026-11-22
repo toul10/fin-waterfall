@@ -1,0 +1,4 @@
+Synthetic private contract. Reference PRIVATE-STIPULATION-7E941C.
+Section 4.2. From the funds available at this step, pay Class A first-priority
+principal ($87,345.67 due) before paying Class B interest ($94,567.89 due).
+In this example the available funds at this step are $50,000.00.

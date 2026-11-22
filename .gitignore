@@ -1,0 +1,19 @@
+.venv/
+.mcp-venv/
+__pycache__/
+*.egg-info/
+private/
+.local-runtime/
+out/
+build/
+dist/
+# Local reports and scratch output (not part of the published source)
+output/
+tmp/
+# Operator venv created by deploy/cloud-run.md step 3
+.hosted-ops-venv/
+# macOS metadata
+.DS_Store
+# Local secrets safety net
+.env
+*.pem

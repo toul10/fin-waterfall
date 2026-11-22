@@ -1,0 +1,63 @@
+#runform .amount-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), 1fr));
+  align-items: end;
+  gap: 1rem;
+}
+#runform .amount-control {
+  position: relative;
+  display: block;
+}
+#runform .amount-control > span {
+  position: absolute;
+  top: 50%;
+  left: .85rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+#runform .amount-control input {
+  margin: 0;
+  padding-left: 1.9rem;
+  font-variant-numeric: tabular-nums;
+}
+#runform h3 { margin: .5rem 0 .8rem; font-size: 1rem; }
+#runform .payment-rule { margin: 0; }
+#runform .payment-rule strong { margin-right: .5rem; }
+#runform [hidden] { display: none !important; }
+.deal-paths { display:flex; flex-wrap:wrap; gap:16px; align-items:center; margin-bottom:18px }
+#draftform .help { margin-bottom:12px }
+#draftform #hosted-consent { padding:12px; background:#f9f1df; border-radius:6px }
+#excerpt-confirm .source {
+  margin: 1rem 0;
+  padding: .85rem 1rem;
+  border-left: 3px solid #577759;
+  background: #f4f7f0;
+}
+
+.allocation-form { max-width: 760px; }
+.allocation-form .pad { display: grid; gap: 1rem; }
+.allocation-form label { margin: 0; }
+.allocation-form [type="submit"] { justify-self: start; }
+.allocation-form .feedback:empty { display: none; }
+.allocation-form small, #allocation-approval small { display: block; color: var(--muted); line-height: 1.45; font-weight: 400; margin-top: .35rem; }
+.allocate-inputs, .allocation-review { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.source-tabs { display: flex; gap: .45rem; }
+.source-tabs button[aria-pressed="true"] {background: #eaf2e7; border-color: #577759; color: #173e30;}
+.allocation-form .contract-drop { padding: 1.1rem; background: #f4f7f0; border: 1px dashed #8ca189; border-radius: .5rem; cursor: pointer; }
+.allocation-form .contract-drop input { background: white; }
+.allocation-prompt { border-left: 3px solid #a67731; padding: .6rem .85rem; background: #fcf5e7; margin: 0; }
+.allocation-review h3 { margin: 0 0 .4rem; font-size: 1rem; }
+.allocation-review blockquote { margin: 0; }
+.allocation-switch { margin: 1.2rem 0; }
+#allocation-approval { margin-top: 1rem; }
+#allocation-result { outline-offset: .2rem; }
+#allocation-result summary { margin-top: 1rem; }
+@media(max-width: 620px){ .allocate-inputs, .allocation-review { grid-template-columns: 1fr; } }
+.waterfall-steps { margin: 0; padding-left: 1.4rem; }
+.waterfall-steps li + li { margin-top: .8rem; }
+.waterfall-steps blockquote { margin: .35rem 0 0; }
+.uncited { border-left: 3px solid #a67731; padding: .6rem .85rem; background: #fcf5e7; }
+.uncited p { margin: 0; }
+.uncited blockquote { margin: .5rem 0 0; }
+.allocation-dues { border: 0; margin: 0; padding: 0; min-width: 0; }
+.allocation-dues legend { font-weight: 600; padding: 0; margin-bottom: .3rem; }

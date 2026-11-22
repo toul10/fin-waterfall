@@ -1,0 +1,25 @@
+Synthetic Auto Receivables Trust 2026-1
+Sale and Servicing Agreement (synthetic test document, not a real transaction)
+
+Section 8.1 Definitions. "Available Funds" means, for any Payment Date, collections on the receivables during the related Collection Period, purchase amounts and any draw on the Reserve Account.
+
+Section 8.2(c)
+Priority of Payments. On each Payment Date, the Indenture Trustee shall apply Available Funds in the following order of priority:
+
+(i) first, to the Servicer, the Servicing Fee;
+
+(ii) second, pro rata, to the Indenture Trustee and the Owner Trustee, the Indenture Trustee Fees and the Owner Trustee Fees;
+
+(iii) third, pro rata, to the Class A Noteholders, the Class A-1 Interest, the Class A-2 Interest and the Class A-3 Interest;
+
+(iv) fourth, the First Priority Principal Payment;
+
+(v) fifth, to the Class B Noteholders, the Class B Interest;
+
+(vi) sixth, to the Reserve Account, the Reserve Account Deposit;
+
+(vii) seventh, the Regular Principal Payment;
+
+(viii) eighth, all remaining Available Funds to the Certificateholders.
+
+Section 8.3 Reports. The Servicer shall deliver the monthly investor report to the Indenture Trustee.

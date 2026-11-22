@@ -1,0 +1,148 @@
+{
+  "synthetic": true,
+  "class_a_1_opening_balance_cents": 10000000,
+  "affected_class_by_payment": {
+    "class_a_principal": "A-1",
+    "class_b_interest": "B"
+  },
+  "first_observed_divergence": {
+    "status": "BLOCK",
+    "rule": {
+      "schema": 1,
+      "deal": "Ford Credit Auto Owner Trust 2025-C",
+      "deal_version": "2025-11-01",
+      "rule_version": "1.0.0",
+      "clause": "Indenture §8.2(c)(iv)–(v)",
+      "source": "https://www.sec.gov/Archives/edgar/data/1129987/000110465925116294/tm2530629d11_ex4-1.htm",
+      "order": [
+        "class_a_principal",
+        "class_b_interest"
+      ],
+      "approved_by": "Bundled public rule, transcribed from SEC execution version"
+    },
+    "scenario": {
+      "cash": 1,
+      "class_a_principal": 10000000,
+      "class_b_interest": 11105633
+    },
+    "expected": {
+      "class_a_principal": 1,
+      "class_b_interest": 0
+    },
+    "candidate": {
+      "class_a_principal": 0,
+      "class_b_interest": 1
+    },
+    "delta_dollars": {
+      "class_a_principal": "-0.01",
+      "class_b_interest": "0.01"
+    },
+    "expected_total_cents": 1,
+    "candidate_total_cents": 1
+  },
+  "regression": {
+    "status": "BLOCK",
+    "rule": {
+      "schema": 1,
+      "deal": "Ford Credit Auto Owner Trust 2025-C",
+      "deal_version": "2025-11-01",
+      "rule_version": "1.0.0",
+      "clause": "Indenture §8.2(c)(iv)–(v)",
+      "source": "https://www.sec.gov/Archives/edgar/data/1129987/000110465925116294/tm2530629d11_ex4-1.htm",
+      "order": [
+        "class_a_principal",
+        "class_b_interest"
+      ],
+      "approved_by": "Bundled public rule, transcribed from SEC execution version"
+    },
+    "scenario": {
+      "cash": 5000000,
+      "class_a_principal": 10000000,
+      "class_b_interest": 11105633
+    },
+    "expected": {
+      "class_a_principal": 5000000,
+      "class_b_interest": 0
+    },
+    "candidate": {
+      "class_a_principal": 0,
+      "class_b_interest": 5000000
+    },
+    "delta_dollars": {
+      "class_a_principal": "-50000.00",
+      "class_b_interest": "50000.00"
+    },
+    "expected_total_cents": 5000000,
+    "candidate_total_cents": 5000000
+  },
+  "one_cent_shortfall": {
+    "status": "BLOCK",
+    "rule": {
+      "schema": 1,
+      "deal": "Ford Credit Auto Owner Trust 2025-C",
+      "deal_version": "2025-11-01",
+      "rule_version": "1.0.0",
+      "clause": "Indenture §8.2(c)(iv)–(v)",
+      "source": "https://www.sec.gov/Archives/edgar/data/1129987/000110465925116294/tm2530629d11_ex4-1.htm",
+      "order": [
+        "class_a_principal",
+        "class_b_interest"
+      ],
+      "approved_by": "Bundled public rule, transcribed from SEC execution version"
+    },
+    "scenario": {
+      "cash": 21105632,
+      "class_a_principal": 10000000,
+      "class_b_interest": 11105633
+    },
+    "expected": {
+      "class_a_principal": 10000000,
+      "class_b_interest": 11105632
+    },
+    "candidate": {
+      "class_a_principal": 9999999,
+      "class_b_interest": 11105633
+    },
+    "delta_dollars": {
+      "class_a_principal": "-0.01",
+      "class_b_interest": "0.01"
+    },
+    "expected_total_cents": 21105632,
+    "candidate_total_cents": 21105632
+  },
+  "fully_funded": {
+    "status": "PASS",
+    "rule": {
+      "schema": 1,
+      "deal": "Ford Credit Auto Owner Trust 2025-C",
+      "deal_version": "2025-11-01",
+      "rule_version": "1.0.0",
+      "clause": "Indenture §8.2(c)(iv)–(v)",
+      "source": "https://www.sec.gov/Archives/edgar/data/1129987/000110465925116294/tm2530629d11_ex4-1.htm",
+      "order": [
+        "class_a_principal",
+        "class_b_interest"
+      ],
+      "approved_by": "Bundled public rule, transcribed from SEC execution version"
+    },
+    "scenario": {
+      "cash": 21105633,
+      "class_a_principal": 10000000,
+      "class_b_interest": 11105633
+    },
+    "expected": {
+      "class_a_principal": 10000000,
+      "class_b_interest": 11105633
+    },
+    "candidate": {
+      "class_a_principal": 10000000,
+      "class_b_interest": 11105633
+    },
+    "delta_dollars": {
+      "class_a_principal": "0.00",
+      "class_b_interest": "0.00"
+    },
+    "expected_total_cents": 21105633,
+    "candidate_total_cents": 21105633
+  }
+}

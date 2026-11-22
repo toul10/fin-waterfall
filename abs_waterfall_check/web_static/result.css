@@ -1,0 +1,40 @@
+.result-view{display:grid;gap:18px;min-width:0}
+.result-view>.panel,.result-view>.top{margin:0}
+.result-view>.panel{min-width:0}
+.result-view p{margin:0;line-height:1.55}
+.result-view .pad>p+p{margin-top:12px}
+.result-findings{list-style:none;padding:0;margin:0 0 14px;display:grid;gap:5px}
+.result-findings li{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:4px 15px;padding:10px 14px;background:#f7f9f9;border-left:3px solid #ba7653}
+.result-findings strong{font-variant-numeric:tabular-nums}
+.result-next strong{margin-right:.4em}
+.result-view td:not(:first-child){font-variant-numeric:tabular-nums}
+.result-view .result-note{padding:12px 18px;font-size:.8rem;color:#495c63}
+.result-view blockquote{margin:0;white-space:pre-line}
+.result-filings{display:grid;gap:6px;line-height:1.7}
+.result-audit>summary{padding:16px 20px;cursor:pointer;font-weight:600}
+.result-audit pre,.result-audit code{overflow-wrap:anywhere}
+.result-check{margin-top:14px}
+.print-reference{display:none}
+.result-check,.result-heading{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.result-heading{justify-content:space-between;font-size:13px}
+.result-inputs{display:flex;flex-wrap:wrap;gap:14px 32px;padding:0 0 14px;margin:0;border-bottom:1px solid var(--line)}
+.result-inputs dt{font-size:12px;color:var(--muted)}
+.result-inputs dd{margin:3px 0;font-size:17px;font-weight:600;font-variant-numeric:tabular-nums}
+.result-view table td:not(:first-child),.result-view table th:not(:first-child){text-align:right}
+@media(max-width:680px){.result-view table td:not(:first-child){text-align:left}}
+@media print{
+  @page{margin:15mm}
+  body:has(.result-view){background:white;color:#101e22}
+  body:has(.result-view) :is(#sidebar,.shell>header,#notice,.skip){display:none!important}
+  body:has(.result-view) .shell,body:has(.result-view) #content{margin:0!important;padding:0!important;max-width:none;width:100%}
+  .result-view{display:block}
+  .result-view>:is(a,.result-audit),.result-view :is([data-print],.result-check){display:none!important}
+  .result-view .panel,.result-view .top{box-shadow:none;margin:0 0 14px}
+  .result-view h1,.result-view h2,.result-view .section-head{break-after:avoid}
+  .result-view tr,.result-view blockquote,.result-findings li{break-inside:avoid}
+  .result-view .table-scroll{overflow:visible}
+  .result-view a{color:inherit}
+  .result-heading>a{display:none}
+  .result-heading{margin-bottom:6px}
+  .print-reference{display:block;font-size:9pt;color:#48594f;overflow-wrap:anywhere;break-inside:avoid}
+}

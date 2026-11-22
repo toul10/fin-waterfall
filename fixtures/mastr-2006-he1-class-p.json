@@ -1,0 +1,36 @@
+{
+  "deal": "MASTR Asset Backed Securities Trust 2006-HE1",
+  "deal_version": "prospectus-0000882377-06-000631",
+  "rule_version": "1.0.0",
+  "distribution_date": "2006-06-26",
+  "rule_source": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1352928/000088237706000631/d439989_424b5.txt",
+    "section": "Prospectus Supplement — Description of the Certificates — Overcollateralization Provisions (lines 4630–4633)"
+  },
+  "collection": {
+    "amount_cents": 24625394,
+    "url": "https://www.sec.gov/Archives/edgar/data/1352928/000105640406002437/mab06he1_10da-200606.txt",
+    "section": "Form 10-D/A, Exhibit 99.1 — Certificateholder Account Statement — Certificate Account — Deposits — Prepayment Penalties (line 515)"
+  },
+  "observed": {
+    "original": {
+      "amount_cents": 19039282,
+      "url": "https://www.sec.gov/Archives/edgar/data/1352928/000105640406002258/mab06he1_10d-200606.txt",
+      "section": "Form 10-D, Exhibit 99.1 — Certificateholder Distribution Summary — Class P (MAB6HE1P0) — Total Distribution (line 224)"
+    },
+    "amended": {
+      "amount_cents": 24625394,
+      "url": "https://www.sec.gov/Archives/edgar/data/1352928/000105640406002437/mab06he1_10da-200606.txt",
+      "section": "Form 10-D/A, Exhibit 99.1 — Certificateholder Distribution Summary — Class P (MAB6HE1P0) — Total Distribution (line 235)"
+    }
+  },
+  "correction": {
+    "original_report_filed": "2006-07-06",
+    "class_p_corrective_payment_date": "2006-07-13",
+    "class_p_corrective_payment_cents": 5586112,
+    "amendment_signed": "2006-07-14",
+    "url": "https://www.sec.gov/Archives/edgar/data/1352928/000105640406002437/mab06he1_10da-200606.txt",
+    "section": "Form 10-D/A, Part I, Item 1 — Distribution and Pool Performance Information, and signature page",
+    "input_timing": "Retrospective check. The corrected collection figure became publicly available in the amendment after the original June 26 distribution. The amended Class P total includes the July 13 corrective payment."
+  }
+}

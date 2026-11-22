@@ -1,0 +1,112 @@
+:root {
+  --display: "Iowan Old Style", Charter, "Palatino Linotype", Georgia, serif;
+  --forest: #193f35;
+}
+:focus-visible { outline: 3px solid #44886c; outline-offset: 3px; }
+main { max-width: 1410px; padding: 36px clamp(22px, 4vw, 65px) 65px; }
+#sidebar { width: 214px; }
+.shell { margin-left: 214px; }
+.brand { font-size: 25px; }
+.menu-label { margin-top: 48px; }
+.brand svg { flex-shrink: 0; }
+header { padding-inline: clamp(22px, 4vw, 65px); background: #fcfcf9; height: 59px; }
+.top { gap: 18px; margin-bottom: 24px; }
+.top > div { min-width: 0; }
+h1 {
+  font: normal clamp(36px, 3.4vw, 55px)/1.08 var(--display);
+  color: var(--forest);
+  letter-spacing: -.046em;
+  overflow-wrap: anywhere;
+}
+.top p { font-size: 15px; }
+h2 { font-size: 20px; font-weight: 650; }
+.top .button, .top button { flex-shrink: 0; }
+.primary { background: #215943; box-shadow: 0 1px 2px #12361b12; }
+.button, button { min-height: 39px; }
+.panel { border-radius: 9px; }
+.desk-views { display: flex; flex-wrap: wrap; gap: 4px; margin: 0 0 12px; }
+.desk-views a { display: inline-block; padding: 5px 11px; margin: 0; border-radius: 4px; font-size: 13px; color: #536259; }
+.desk-views a[aria-current], .desk-views a:hover { color: #205438; background: #e4ecdf; }
+.review-counts {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  margin-bottom: 23px;
+  overflow: hidden;
+}
+.review-count { padding: 17px 22px 14px; color: var(--forest); }
+.review-count + .review-count { border-left: 1px solid var(--line); }
+.review-count:hover, .review-count.selected { background: #eff3ed; }
+.review-count:focus-visible { outline-offset: -3px; }
+.review-count > div { display: flex; align-items: center; gap: 9px; font-size: 14px; font-weight: 600; }
+.review-count strong { display: block; margin-top: 5px; font: 43px/1.1 var(--display); font-variant-numeric: lining-nums tabular-nums; }
+.count-symbol { display: inline-flex; padding: 5px; border-radius: 6px; background: #e4f1e7; color: #246543; }
+.count-block .count-symbol { background: #f8e7de; color: #9d482c; }
+.count-hold .count-symbol { background: #faf0d9; color: #816121; }
+.count-symbol .icon { width: 17px; height: 17px; }
+.reviews-panel .section-head p { margin-top: 2px; font-size: 13px; color: var(--muted); }
+.section-head > a { white-space: nowrap; }
+.record-link { color: #244e3f; }
+.secondary-line { display: block; margin-top: 3px; color: var(--muted); line-height: 1.3; }
+.date-cell { color: var(--muted); white-space: nowrap; }
+.finding { font-size: 14px; font-weight: 600; }
+.discrepancy { color: #974521; font-variant-numeric: tabular-nums; }
+.balanced { color: #2b634c; }
+.missing { color: #795f2a; }
+.desk-empty { display: flex; gap: 15px; align-items: center; padding: 28px 22px; }
+.desk-empty > span { display: grid; place-items: center; padding: 9px; border-radius: 50%; background: #f1f4ec; color: #526c4d; }
+.desk-empty p { margin-top: 3px; font-size: 13px; color: var(--muted); }
+.desk-examples { margin: 23px 0; }
+.desk-examples h2 { margin-bottom: 11px; }
+.worksheets { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; }
+.worksheet { background: #eef3eb; border: 1px solid #d3dfcc; border-radius: 9px; padding: 19px 22px; display: flex; flex-direction: column; align-items: flex-start; }
+.worksheet:nth-child(even) { background: #f2f1e9; border-color: #e0dece; }
+.sheet-caption { display: flex; align-items: center; gap: 7px; color: #4d654a; font-size: 11px; font-weight: 650; }
+.sheet-rule { width: 18px; height: 2px; background: currentColor; }
+.worksheet h3 { font: 27px/1.2 var(--display); letter-spacing: -.04em; margin-top: 7px; color: var(--forest); overflow-wrap: anywhere; }
+.worksheet p { color: #46594c; font-size: 14px; margin: 6px 0 15px; max-width: 48ch; }
+.worksheet a { margin-top: auto; font-size: 13px; font-weight: 650; }
+.worksheet a:hover, .record-link:hover, .section-head a:hover { text-decoration: underline; }
+.worksheet .icon { width: 16px; margin-left: 4px; }
+details summary { color: #2d5443; }
+.result-view .top h1 { max-width: 27ch; }
+#runform { display: grid; gap: 14px; }
+#runform label { margin: 0; }
+#runform > details { border-top: 1px solid var(--line); padding-top: 10px; font-size: 13px; }
+#runform details[open] > label, #runform details[open] > div { margin-top: 12px; }
+#runform details summary { width: fit-content; }
+#runform [type=submit] { justify-self: start; }
+#runform .payment-rule { padding: 10px 13px; background: #eff4ed; border-left: 3px solid #5b8060; color: #2e5039; }
+#runform .help p, #runform .help details { margin-top: 5px; }
+#caseinfo:not(:empty) { padding-bottom: 0; }
+#runform .feedback:empty { display: none; }
+.context { color: #34583b; }
+@media (min-width: 1500px) {
+  .shell { max-width: 1710px; }
+}
+@media (max-width: 980px) {
+  #sidebar { width: 173px; padding-inline: 11px; }
+  .shell { margin-left: 173px; }
+  main { padding-inline: 22px; }
+  .review-count { padding: 15px; }
+  .top .button { align-self: start; }
+}
+@media (max-width: 680px) {
+  #sidebar { width: 220px; }
+  .shell { margin: 0; }
+  header { height: 54px; padding-inline: 14px; }
+  main { padding: 23px 14px 40px; }
+  .top { gap: 12px; }
+  .top p { font-size: 14px; }
+  .review-count { padding: 12px 9px; }
+  .review-count > div { display: block; font-size: 12px; }
+  .count-symbol { display: flex; width: fit-content; margin-bottom: 4px; }
+  .review-count strong { font-size: 32px; }
+  .worksheets { grid-template-columns: 1fr; }
+  .worksheet { padding: 15px; }
+  .section-head { gap: 8px; }
+  .section-head a { font-size: 12px; }
+  .desk-empty { padding: 18px 15px; align-items: start; }
+}

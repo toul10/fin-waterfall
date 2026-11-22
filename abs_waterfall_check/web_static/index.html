@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#143831" />
+    <title>Distribution review · Waterfall</title>
+    <link rel="stylesheet" href="/app.css" />
+    <link rel="stylesheet" href="/portfolio.css" />
+    <link rel="stylesheet" href="/flow.css" />
+    <link rel="stylesheet" href="/result.css" />
+    <link rel="stylesheet" href="/guide.css" />
+    <link rel="stylesheet" href="/release.css" />
+    <script defer src="/spreadsheet.js"></script>
+    <script defer src="/guide.js"></script>
+    <script defer src="/releases.js"></script>
+    <script defer src="/allocation.js"></script>
+    <script defer src="/app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <aside id="sidebar">
+      <a class="brand" href="#overview"
+        ><svg viewBox="0 0 40 40" width="37" height="37" aria-hidden="true">
+          <rect width="40" height="40" rx="9" fill="#cbe8aa" />
+          <path d="M8 10h24v5H8zm6 8h18v5H14zm7 8h11v5H21z" fill="#163d31" /></svg
+        >Waterfall</a
+      >
+      <div class="menu-label">PORTFOLIO</div>
+      <nav id="nav"></nav>
+      <div class="local" aria-label="Workspace access"></div>
+    </aside>
+    <section class="shell">
+      <header>
+        <button
+          class="mobile"
+          id="menu"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          ☰</button
+        ><span>Portfolio</span><span class="slash">/</span
+        ><strong id="crumb">Review desk</strong>
+      </header>
+      <main id="content" tabindex="-1" aria-busy="true">
+        Loading workspace…
+      </main>
+    </section>
+    <div id="notice" role="status"></div>
+  </body>
+</html>

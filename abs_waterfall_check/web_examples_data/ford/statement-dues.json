@@ -1,0 +1,32 @@
+{
+  "2026-06-15": {
+    "cash": 3153197001,
+    "class_a_principal": 0,
+    "class_b_interest": 11105633,
+    "source": "https://www.sec.gov/Archives/edgar/data/2092555/000209255526000026/fcaot2025-c10xdinvestorrep.htm"
+  },
+  "2026-07-15": {
+    "cash": 3436499234,
+    "class_a_principal": 0,
+    "class_b_interest": 11105633,
+    "source": "https://www.sec.gov/Archives/edgar/data/2092555/000209255526000031/fcaot2025-c10xdinvestorrep.htm"
+  },
+  "2026-08-17": {
+    "cash": 3208704903,
+    "class_a_principal": 0,
+    "class_b_interest": 11105633,
+    "source": "https://www.sec.gov/Archives/edgar/data/2092555/000209255526000035/fcaot2025-c10xdinvestorrep.htm"
+  },
+  "2026-09-15": {
+    "cash": 3066309461,
+    "class_a_principal": 0,
+    "class_b_interest": 11105633,
+    "source": "https://www.sec.gov/Archives/edgar/data/2092555/000209255526000039/fcaot2025-c10xdinvestorrep.htm"
+  },
+  "2026-10-15": {
+    "cash": 2801134336,
+    "class_a_principal": 0,
+    "class_b_interest": 11105633,
+    "source": "https://www.sec.gov/Archives/edgar/data/2092555/000209255526000043/fcaot2025-c10xdinvestorrep.htm"
+  }
+}

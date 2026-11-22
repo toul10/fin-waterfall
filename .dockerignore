@@ -1,0 +1,13 @@
+**
+!Dockerfile
+!pyproject.toml
+!deploy/
+!deploy/python313.constraints.txt
+!deploy/hosted.constraints.txt
+!abs_waterfall_check/
+!abs_waterfall_check/*.py
+!abs_waterfall_check/web_static/
+!abs_waterfall_check/web_static/*
+!abs_waterfall_check/web_examples_data/
+!abs_waterfall_check/web_examples_data/*/
+!abs_waterfall_check/web_examples_data/*/*.json

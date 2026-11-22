@@ -1,0 +1,38 @@
+worker_processes auto;
+pid nginx.pid;
+error_log stderr warn;
+events { worker_connections 512; }
+http {
+    access_log off;
+    server_tokens off;
+    client_body_temp_path body;
+    proxy_temp_path proxy;
+    fastcgi_temp_path fastcgi;
+    uwsgi_temp_path uwsgi;
+    scgi_temp_path scgi;
+    client_header_timeout 15s;
+    client_body_timeout 30s;
+    client_max_body_size 16m;
+    limit_req_zone $binary_remote_addr zone=signins:1m rate=10r/m;
+    server {
+        listen @LISTEN@ ssl;
+        server_name @HOST@;
+        ssl_certificate @CERT@;
+        ssl_certificate_key @KEY@;
+        ssl_protocols TLSv1.2 TLSv1.3;
+        add_header Strict-Transport-Security "max-age=31536000" always;
+        proxy_set_header Host $http_host;
+        proxy_http_version 1.1;
+        proxy_read_timeout 150s;
+        proxy_request_buffering off;
+        proxy_buffering off;
+        location = /api/login {
+            limit_req zone=signins burst=5 nodelay;
+            limit_req_status 429;
+            proxy_pass http://127.0.0.1:@UPSTREAM@;
+        }
+        location / {
+            proxy_pass http://127.0.0.1:@UPSTREAM@;
+        }
+    }
+}

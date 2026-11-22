@@ -1,0 +1,52 @@
+{
+  "deal": "MASTR Asset Backed Securities Trust 2006-HE1",
+  "distribution_date": "2006-06-26",
+  "rule_source": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1352928/000088237706000631/d439989_424b5.txt",
+    "section": "Prospectus Supplement — Description of the Certificates — Overcollateralization Provisions (lines 4630–4633)"
+  },
+  "rule_provenance": {
+    "rule_id": "eee241c908534ec6adfe4dbbd25860bb",
+    "approved_rule_sha256": "65910351f1cfb3e72b9e8972d9893def21043204581a0856cf00a5836a92ed83",
+    "draft_sha256": "f31ab137435468ac8ff6f1931e73e41209a550097eddbfdf59ff6834966f6595",
+    "clause": "Prospectus Supplement — Description of the Certificates — Overcollateralization Provisions (lines 4630–4633)"
+  },
+  "collection": {
+    "amount_cents": 24625394,
+    "url": "https://www.sec.gov/Archives/edgar/data/1352928/000105640406002437/mab06he1_10da-200606.txt",
+    "section": "Form 10-D/A, Exhibit 99.1 — Certificateholder Account Statement — Certificate Account — Deposits — Prepayment Penalties (line 515)"
+  },
+  "correction": {
+    "original_report_filed": "2006-07-06",
+    "class_p_corrective_payment_date": "2006-07-13",
+    "class_p_corrective_payment_cents": 5586112,
+    "amendment_signed": "2006-07-14",
+    "url": "https://www.sec.gov/Archives/edgar/data/1352928/000105640406002437/mab06he1_10da-200606.txt",
+    "section": "Form 10-D/A, Part I, Item 1 — Distribution and Pool Performance Information, and signature page",
+    "input_timing": "Retrospective check. The corrected collection figure became publicly available in the amendment after the original June 26 distribution. The amended Class P total includes the July 13 corrective payment."
+  },
+  "results": {
+    "original": {
+      "status": "BLOCK",
+      "exit_code": 1,
+      "class_p_delta_usd": "-55861.12",
+      "observed": {
+        "amount_cents": 19039282,
+        "url": "https://www.sec.gov/Archives/edgar/data/1352928/000105640406002258/mab06he1_10d-200606.txt",
+        "section": "Form 10-D, Exhibit 99.1 — Certificateholder Distribution Summary — Class P (MAB6HE1P0) — Total Distribution (line 224)"
+      },
+      "audit": "runs/d34d3f2ac6294203b71fa3fdaa7cab9f.json"
+    },
+    "amended": {
+      "status": "PASS",
+      "exit_code": 0,
+      "class_p_delta_usd": "0.00",
+      "observed": {
+        "amount_cents": 24625394,
+        "url": "https://www.sec.gov/Archives/edgar/data/1352928/000105640406002437/mab06he1_10da-200606.txt",
+        "section": "Form 10-D/A, Exhibit 99.1 — Certificateholder Distribution Summary — Class P (MAB6HE1P0) — Total Distribution (line 235)"
+      },
+      "audit": "runs/b5d737584c6d4a319261d9645ac2e3eb.json"
+    }
+  }
+}
